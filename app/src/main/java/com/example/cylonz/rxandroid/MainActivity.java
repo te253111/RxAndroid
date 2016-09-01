@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Observable.fromCallable(new Callable<String>() {
             @Override
             public String call() throws Exception {
-                return getNameList(0);
+                return getNameList(1);
             }
         }).subscribeOn(Schedulers.io())
           .subscribe(new Observer<String>() {
